@@ -1,0 +1,88 @@
+
+
+
+
+nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+}
+#card1{
+    display: flex;
+    text-decoration: none;
+}
+#card1 li{
+    list-style: none;
+    margin-left: 30px;
+    height: 50px;
+    padding-top: 20px;
+}
+#cards{
+    display: flex;
+}
+#inp1,#inp2,#inp3{
+    position: relative;
+}
+.inp2-data,.inp3-data{
+    position: absolute;
+    z-index: 2;
+}
+#start{
+    margin-top: 10%;
+    border: 1px solid rgba(68, 68, 68, 0.534);
+    height: 190px;
+    border-radius: 20px;
+}
+#start #card1{
+    border: 1px solid rgba(68, 68, 68, 0.534);
+    padding-left: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#cards div{
+    padding: 20px 40px;
+}
+#inp1 input,#inp2 input,#inp3 input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+}
+#inp1{
+    margin-left: -20px;
+}
+#inp2 input{
+    margin-left: -60px;
+}
+#inp3{
+    margin-left: 180px;
+}
+#check{
+    margin-left: 20px;
+}
+#check input{
+    margin-left: 10px;
+}
+#inp1 i,#inp2 i,#inp3 i{
+    position: absolute;
+}
+#carouselExampleControls{
+    margin-top: 5%;
+}
+#h2{
+    padding-left: 6%;
+    padding-bottom: 2%;
+}
+#prev{
+   margin-top: 60px;
+   margin-left: 20px;
+   border-radius: 50%;
+}
+#next{
+    margin-top: 60px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+#card-pos{
+    position: relative;
+}
+#card-pos img h3{
+    position: absolute;
+}

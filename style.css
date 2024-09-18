@@ -1,0 +1,212 @@
+#ind{
+    width: 30px;
+    height: 30px;
+}
+#head{
+    background-color: #003B95;
+    height: 380px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/* #round{
+    border: 1px solid white;
+    padding-right: 15px;
+    padding-top: 8px;
+
+} */
+#h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+span{
+    font-size: 25px;
+}
+#search-btn{
+    width: 10px;
+    background-color: #006CE4
+}
+#form input,#checkin,#search-btn{
+    height: 70px;
+}
+#form input{
+    width: 390px;
+}
+#btn-1{
+    margin-right: 10px;
+    font-weight: 600;
+    }
+#btn-2{
+margin-right: 50px;
+font-weight: 600;
+}
+#par{
+    position: relative;
+}
+#bed,#text{
+    position: absolute;
+    color: rgba(51, 51, 51, 0.514);
+    margin: 25px;
+}
+#text{
+    margin-left: 55px;
+    margin-top: -50px;
+    color: rgba(51, 51, 51, 0.938);
+
+}
+#checkin,#members{
+    background-color: #fff;
+    color: black;
+}
+#checkin{
+    position: relative;
+    width: 320px;
+}
+#checkin p{
+    margin-left: 40px;
+    margin-top: -34px;
+}
+#checkin #icon{
+    padding-top: 30px;
+    padding-left: 10px;
+   color: rgba(51, 51, 51, 0.589);
+}
+#mem{
+    color: rgba(51, 51, 51, 0.938);
+}
+#tx{
+    margin-left: 25px;
+}
+#members{
+    width: 250px;
+}
+#ch{
+    color: rgb(12, 12, 12);
+}
+#form select{
+    width: 260px;
+}
+#search-btn{
+    width: 150px;
+}
+.card-body #card1-txt,.card-body #card3-txt,.card-body #card2-txt{
+    margin-left: -40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#car-tx{
+    font-size: 15px;
+    font-weight: 700;
+}
+#card1{
+    height: 90px;
+}
+#this{
+    width: 400px;
+}
+.card-body #card3-tex,.card-body #card1-tex,.card-body #card2-tex{
+    margin-left: -40px;
+    font-size: 13px;
+}
+#car-2{
+    height: 130px;
+}
+#hey{
+    margin-left: -20px;
+}
+#prop{
+    font-weight: 750;
+    font-size: 24px;
+}
+#p,#q{
+    font-size: 13px;
+}
+#card2-img,#card3-img{
+    width: 50px;
+    height: 50px;
+}
+#card3-img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#card2-tx{
+    margin-left: -20px;
+    
+}
+.card {
+    width: 95%;
+    height: 250%;
+}
+#card-2{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/023/977/637/large_2x/a-couple-sitting-on-a-beach-sweet-couple-happy-relax-enjoy-love-and-romantic-moment-ai-generated-free-photo.jpg');
+}
+.h6{
+    font-weight:800;
+    font-size: 19px;
+}
+#border{
+    border: 1px solid rgba(80, 79, 79, 0.384);
+    width: 80%;
+    margin-left: 100px;
+}
+#img-10{
+    width: 50%;
+    height: 50%;
+}
+#img-8{
+    width: 10%;
+    height: 20%;
+}
+#img-9{
+    width: 35%;
+}
+#parent img{
+    position: relative;
+}
+#child{
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 50px;
+}
+#card{
+    position: relative;
+}
+#cc{
+    position: absolute;
+    padding-top: 250px;
+}
+#img-7{
+    height: 380px;
+    width: 200%;
+}
+#eve,#eve-day{
+    width: 200%;
+}
+#gift{
+    float: right;
+}
+#footer{
+    display: flex;
+    /* padding:3% 10%; */
+    margin-left: 0px;
+    background-color: rgba(128, 128, 128, 0.466);
+    color: white;
+    padding-top: 150px;
+}
+#footer a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+}
+#footer img{
+    width: 100px;
+    height: 100px;
+}
+#footer li{
+    list-style: none;
+}
+#footer ul{
+    display: block;
+    margin-left: 70px;
+}
+a{
+    text-decoration: none;
+}

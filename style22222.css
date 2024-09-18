@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar #logo{
+  width: .2%;
+  height: 0;
+}
+#bg-img img{
+    height: 600px;
+}
+#bg-img{
+    position: relative;
+}
+#txt,#bg-img img,#cards{
+    position: absolute;
+}
+#txt h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+#txt h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+#txt{
+    margin-top: 150px;
+    margin-left: 250px;
+}
+#cards{
+    margin-left: -50px;
+    border: 1px solid white;
+    background-color: #fff;
+    width: 125%;
+    height: 80%;
+}
+
+/* 
+    #grp1,#grp2,#grp3,#grp4{
+    margin-left: 300px;
+    /* border: 1px solid red; }
+    */
+    
+#cars{
+    width: 200px;
+    height: 30px;
+}
+#cards button{
+    border: 1px solid #854ec9;
+    width: 90%;
+    color: white;
+    margin-left: 360%;
+    background-color: #854ec9;
+    margin-top:15px;
+}
+#grp1,#grp2,#grp3,#grp4{
+   position: relative;
+}
+#grp1 i,#grp2 i,#grp3 i,#grp4 i{
+    position: absolute;
+    margin-left: -70px;
+}
