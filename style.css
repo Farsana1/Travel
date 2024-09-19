@@ -147,42 +147,88 @@ font-weight: 600;
     border: 1px solid rgba(80, 79, 79, 0.384);
     width: 80%;
     margin-left: 100px;
+    height: 300px;
 }
 #img-10{
     width: 50%;
-    height: 50%;
+    height: 70%;
 }
 #img-8{
     width: 10%;
     height: 20%;
+    margin-top: 130px;
+    margin-left: -50px;
+}
+.trip{
+    text-decoration: none;
+    
+}
+#price{
+    margin-left: 100px;
+}
+#price p{
+    font-size: 13px;
+}
+#price p span{
+    font-size: 17px;
+    font-weight: 700;
 }
 #img-9{
-    width: 35%;
+    width: 45%;
+margin-top: -70px;
 }
 #parent img{
     position: relative;
 }
 #child{
     position: absolute;
-    margin-top: -230px;
-    margin-left: 50px;
+    margin-top: -250px;
+    margin-left: 70px;
 }
 #card{
     position: relative;
 }
 #cc{
     position: absolute;
-    padding-top: 250px;
+    padding-top: 200px;
 }
 #img-7{
-    height: 380px;
+    height: 430px;
     width: 200%;
 }
-#eve,#eve-day{
-    width: 200%;
+.ryokan{
+    font-size: 15px;
+    font-weight: 700;
 }
+#ryokan-p,#ryokan-q{
+    font-size: 13px;
+}
+.propp{
+    font-weight: 700;
+}
+.prop1{
+    color: rgba(48, 48, 48, 0.623);
+}
+#eve{
+font-size: 20px;
+font-weight: 800;
+}
+#eve-day{
+    font-size: 18px;
+    font-weight: 700;
+    }
 #gift{
     float: right;
+}
+#ap a,#bp a,#cp a,#dp a,#ep a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+#fp a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
 }
 #footer{
     display: flex;
@@ -191,6 +237,10 @@ font-weight: 600;
     background-color: rgba(128, 128, 128, 0.466);
     color: white;
     padding-top: 150px;
+}
+#close{
+    background-color: rgba(128, 128, 128, 0.466);
+    color: black;
 }
 #footer a{
     color: rgb(12, 12, 12);
