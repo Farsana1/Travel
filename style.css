@@ -29,10 +29,7 @@
     #end img,#end i,#end p,#end button{
         display: none;
     }
-    #small-sc{
-        display:flex;
-        z-index: 5;
-    }
+    
     #nav{
         margin-top: -30px;
         font-size: 20px;
@@ -61,7 +58,24 @@
     margin-left:20%;
     margin-top: 10px;
    }
+   #wrap{
+    position: relative;
+   }
+   #ar,#wrap i{
+    position: absolute;
+   }
+   #wrap i{
+    margin-top: 20px;
+    margin-left: 15px;
+   }
+   #ar{
+    margin-top: -40px;
+    margin-left: 50px;
+   }
    #item1{
+    display: none;
+   }
+   #chh input,#trv{
     display: none;
    }
    #nav1 span{
@@ -84,6 +98,14 @@
     color: #000;
     font-size: 30px;
    }
+   #checkin1 p, #checkin2 p{
+    margin-top: -20px;
+    margin-left: 25px;
+   }
+   #newp2,#newp1{
+    font-size: 20px;
+    margin-top: -20px;
+   }
    #ch,#chh,#fp,#insp,#exp,#pln,#border,#this{
     display: none;
    }
@@ -92,6 +114,15 @@
     display: none;
 }
 footer,#close,#cardss,#img-10,#child,#parent,#img-8{
+    display: none;
+}
+#newf{
+    margin-right: 12px;
+}
+#newf i{
+    margin-left: -40px;
+}
+#img-001,#img-000{
     display: none;
 }
 }
@@ -107,7 +138,7 @@ footer,#close,#cardss,#img-10,#child,#parent,#img-8{
         padding-left: 100px;
         padding-right: 100px;
     }
-    #small-sc,#search-btn1{
+    #small-sc i,#search-btn1{
         display: none;
     }
     #car-2{
@@ -118,7 +149,7 @@ footer,#close,#cardss,#img-10,#child,#parent,#img-8{
         font-size: 50px;
         font-weight: 700;
     }
-    #form1{
+    #form1,#newf{
         display: none;
     }
     #nav #st1 {
@@ -127,7 +158,18 @@ footer,#close,#cardss,#img-10,#child,#parent,#img-8{
     #form{
         margin-top: -80px;
     }
-
+    #dest h4,#dest #navigation{
+        margin-left: 45px;
+      }
+      #dest-row,#fp{
+        margin-left: 45px;
+        margin-right: 20px;
+      }
+      #copyr{
+        margin-left: 20%;
+        padding-bottom: 10px;
+      }
+      
 
 /* #round{
     border: 1px solid white;

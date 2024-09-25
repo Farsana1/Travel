@@ -23,7 +23,7 @@
         <div class="d-flex justify-content-between mb-3 ms-lg-2 ms-md-1" id="head1">
             <div id="start" class="mt-lg-0 ms-1"><h3>Booking.com</h3></div>
             <div id="end" class="d-md-flex">
-              <div id="small-sc" class="d-lg-none border-4 border-info">
+              <div id="small-sc" class="d-sm-flex mt-5 border-4 border-info">
                 <i class="fa-solid fa-user fa-2x" id="user">
                   </i>
                   <i class="fa-solid fa-bars fa-2x">
@@ -56,7 +56,7 @@
               <i class="fa-solid fa-taxi me-2 me-md-1"></i> Airpot taxis
             </div>
         </div>
-        <div class="mt-3 pt-5 pt-sm-0 mb-sm-0 ms-sm-4" id="nav1">
+        <div class="mt-5 pt-5 pt-sm-0 mb-sm-0 ms-sm-4" id="nav1">
             <h2 id="h2">Find your next stay <br></h2>
             <span>Search deals on hotels, homes, and much more...</span>
         </div>    
@@ -87,30 +87,30 @@
     <!-- small screen searching  -->
     <div class="container-fluid px-0 mt-sm-0 w-100" id="form1">
       <div class="row w-100 m-0">
-        <div class="col-12">
+        <div class="col-12" id="wrap">
           <i class="fa-solid fa-bed" id="bed"></i>
-          <input class="border border-warning border-4 rounded w-100" type="text" id="going1" placeholder="Around Current Location">
+          <input class="border border-warning border-4 rounded w-100" type="text" id="going1"><p id="ar">Around Current Location</p>
         </div>
       </div>
     
-      <div class="row w-100 m-0">
+      <div class="row w-100 m-0 p-0">
         <div class="col-6">
           <div id="checkin1" class="border border-warning border-4 rounded">
             <i class="fa-solid fa-calendar" id="icons"></i>
-            <p id="newp1">Check-in Date</p>
-            <span>Wed 25 Sept 2024</span>
+            <p >Check-in Date</p>
+            <span id="newp1">Wed 25 Sept 2024</span>
           </div>
         </div>
         <div class="col-6 m-0">
           <div id="checkin2" class="border border-warning border-4 rounded">
             <i class="fa-solid fa-calendar" id="icon"></i>
-            <p id="newp2">Check-out Date</p>
-            <span>Wed 25 Sept 2024</span>
+            <p >Check-out Date</p>
+            <span id="newp2">Wed 25 Sept 2024</span>
           </div>
         </div>
       </div>
     
-      <div class="row w-100 m-0">
+      <div class="row w-100 m-0 ms-2 me-5 pe-3">
         <div class="col-12 border border-warning border-4 rounded d-flex justify-content-between">
           <div class="col-4">
             <p>Adults</p>
@@ -138,7 +138,7 @@
  
 <!-- uhbjkml -->
          
-        <div class="d-flex mt-5 ms-2" id="banner">
+        <div class="d-flex mt-5 ms-5" id="banner">
             <div class="row ms-5" id="item1">
               <div class="col-md-4 ms-3">
               <div class="card mb-3">
@@ -213,8 +213,8 @@
                       <a href="#" class="btn btn-primary">Search for flights</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png" alt="no-img" class="img-fluid">
+                  <div class="col-md-4" >
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png?k=6bb1bf3c13db4a7ba3c22a2d1f1051f793c525a78104703b4dec3eb12101f545&o=" alt="no-img" class="img-fluid" id="img-000">
                   </div>
                 </div>
               </div>
@@ -230,8 +230,8 @@
                       <a href="#" class="btn btn-primary">Search for flights</a>
                     </div>
                   </div>
-                  <div class="col-md-4">
-                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png" alt="..." class="img-fluid">
+                  <div class="col-md-4" id="img-0">
+                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png?k=6bb1bf3c13db4a7ba3c22a2d1f1051f793c525a78104703b4dec3eb12101f545&o=" alt="no-img" class="img-fluid" id="img-001">
                   </div>
                 </div>
               </div>
@@ -413,7 +413,7 @@
         <h3 id="prop" class="mb-4">Browse by property type</h3>
       </div>
     
-      <div class="row">
+      <div class="row me-5">
         <!-- Carousel 1 -->
         <div class="col-md-3 col-12">
           <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
@@ -586,7 +586,7 @@
     
 <!-- deals desktop size-->
 <div class="d-none d-lg-block ms-5 me-5" id="deal">
-  <div class="ms-5 me-5">
+  <div class=" me-5">
     <h4>Deals for the weekend</h4>
     <p>Save on stays for 20 September - 22 September</p>
   </div>
@@ -644,7 +644,7 @@
 
 <!-- carousel unique prop -->
 <div class="d-lg-none ms-5 me-5 mb-5" id="unique-properties">
-  <div class="ms-2">
+  <div >
     <h4>Stay at our top unique properties</h4>
     <p>From castles and villas to boats and igloos, we've got it all</p>
   </div>
@@ -710,7 +710,11 @@
     </button>
   </div>
 </div>
+
+
  <div class="row ms-5 me-5" id="cardss">
+  <div class=" me-5 mt-3">
+    <h4>Stay in a top-rated holiday rental</h4></div>
       <div class="col-md-3">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -1013,7 +1017,7 @@
     </div>
       </div>
 <!-- travel more -->
-      <div class="row ms-5" >
+      <div class="row ms-5" id="trv" >
         <div>
           <h4>Travel more, spend less</h4>
         </div>
@@ -1147,7 +1151,28 @@
   <a href="">. Discover monthly stays</a>
   </div>
 
-
+<div id="newf" class="container-fluid bg-secondary w-100 pe-0">
+  <div class="d-flex justify-content-between">
+    <div><p>Support</p></div>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div><p>Discover</p></div>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div><p>Terms & Settings</p></div>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div><p>Partners</p></div>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div><p>About</p></div>
+    <i class="fa-solid fa-caret-down"></i>
+  </div>
+</div>
 
   <footer  >
     <div id="footer" class="container-fluid">
