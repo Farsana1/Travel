@@ -39,15 +39,18 @@
         font-size: 35px;     
         font-weight: 600;
         margin-left: 13px;
+        margin-top: -70px;
     }
    #st4,#st5,#st6,#browse,#deal{
         display: none; 
    }
    #st1{
     margin-left: 3%;
+    margin-top: 10px;
     border: 1px solid white; 
-    width: 190px;
-    padding-top: 20px;
+    width: 200px;
+    padding-top: 17px;
+    height: 70px;
     padding-left: 2px;
    }  
    #st2{
@@ -84,7 +87,7 @@
     margin-left: 13px;
    }
    #form1{
-    margin-top: 23%;
+    margin-top: 30%;
    }
   #dest h4,#dest #navigation{
     margin-left: -30px;
