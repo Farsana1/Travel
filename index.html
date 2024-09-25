@@ -17,15 +17,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <div class="container-fluid text-light pt-3" id="head">
-        <div class="d-flex justify-content-between mb-3 ms-2">
-            <div id="start"><h3>Booking.com</h3></div>
-            <div id="end" class="d-flex">
-                <div class="pe-3 mt-1"><p>INR</p></div>
-                
+    <div class="container-fluid text-light pt-md-3" id="head">
+        <div class="d-flex justify-content-between mb-3 ms-lg-2 ms-md-1" id="head1">
+            <div id="start" class="mt-lg-0 ms-1"><h3>Booking.com</h3></div>
+            <div id="end" class="d-md-flex">
+              <div id="small-sc" class="d-lg-none border-4 border-info">
+                <i class="fa-solid fa-user fa-2x" id="user">
+                  </i>
+                  <i class="fa-solid fa-bars fa-2x">
+                  </i>
+              </div>
+                <div class="pe-lg-3 mt-1"><p>INR</p></div>               
                     <img src="https://t-cf.bstatic.com/design-assets/assets/v3.125.0/images-flags/In@3x.png" alt="" class="rounded-circle mt-1" id="ind">
             
                   <!--  <div id="round" class="rounded-circle"> --> <i class="fa-solid fa-question ps-3 mt-2"></i>
@@ -35,51 +39,107 @@
              
                 <button class="btn text-primary btn-light pe-3 border-0" id="btn-1">Register</button> 
 
-                <button class="btn text-primary border-0 btn-light ps-3 " id="btn-2">Sign in</button>
+                <button class="btn text-primary border-0 btn-light ps-3" id="btn-2">Sign in</button>
 
             </div>
         </div>
-        <div id="nav" class="d-flex ms-2">
-            <div ><i class="fa-solid fa-bed me-2 "></i>Stays</div>
-            <div class="ps-5"><i class="fa-solid fa-plane me-2"></i>Flights</div>
-            <div class="ps-5"><i class="fa-solid fa-earth-europe me-2"></i>Flight + Hotel</div>
-            <div class="ps-5"><i class="fa-solid fa-car me-2"></i>Car rentals</div>
-            <div class="ps-5"><i class="fa-solid fa-snowflake me-2"></i>Attractions</div>
-            <div class="ps-5">
-              <i class="fa-solid fa-taxi me-2"></i>Airpot taxis
+        <div id="nav" class="d-flex ms-md-2 mt-sm-1 ms-sm-1 w-100">
+            <div class="ps-md-0 ms-lg-0 mt-lg-0 rounded-pill" id="st1"><i class="fa-solid fa-bed ms-md-3 me-2 ms-sm-5 ms-lg-3 "></i> Stays</div>
+            <div class="ps-md-5 ms-lg-0 ps-sm-0" id="st2">
+              <i class="fa-solid fa-plane me-sm-0  me-4 ms-sm-0 mt-lg-0" >
+              </i> Flights</div>
+            <div class="ps-sm-0"id="st3"><i class="fa-solid fa-earth-europe me-2 me-md-1 ms-sm-4"></i> Flight + Hotel</div>
+
+            <div class="ps-5 " id="st4"><i class="fa-solid fa-car me-2 me-sm-1 ms-sm-4"></i> Car rentals</div>
+            <div class="ps-5" id="st5"><i class="fa-solid fa-snowflake me-2 me-sm-1 ms-sm-4" ></i> Attractions</div>
+            <div class="ps-5" id="st6">
+              <i class="fa-solid fa-taxi me-2 me-md-1"></i> Airpot taxis
             </div>
         </div>
-        <div class="mt-4 pt-3">
+        <div class="mt-3 pt-5 pt-sm-0 mb-sm-0 ms-sm-4" id="nav1">
             <h2 id="h2">Find your next stay <br></h2>
             <span>Search deals on hotels, homes, and much more...</span>
+        </div>    
         </div>
-    
-        <div class="d-flex mt-5 pt-5" id="form">
+        <div class="d-md-flex d-lg-flex pt-md-5 d-sm-none ms-lg-5 ps-lg-5" id="form">
             <div id="par">
               <i class="fa-solid fa-bed" id="bed"></i>
-              <input  class="border border-warning border-4 rounde" type="text" id="going">
+              <input  class="border border-warning border-4 rounded" type="text" id="going">
             <div id="text">where are you going?</div>
             </div>
-          <div id="checkin"class="border border-warning border-4 rounded"><i class="fa-solid fa-calendar" id="icon"></i><p>Check-in Date - Check-out Date</p>
-            </div>
-            <div  class="border border-warning border-4 rounded">
-              
-              <div id="members">
+          <div id="checkin"class="border border-warning border-4 rounded">
+            <i class="fa-solid fa-calendar" id="icon"></i><p id="newp">Check-in Date - Check-out Date</p>
+          </div>     
+              <div id="members"  class="border border-warning border-4 rounded">
                 <i class="fa-solid fa-user " id="mem"></i>
-             <div id="tx">
+             <div id="tx" style="height: 48px;">
               2 adults . 0 children . 1 room
             </div>
             </div>
-                
-            </div>
-           <button  class="border border-warning border-4 rounded btn btn-primary" id="search-btn">Search</button>
+            <button class="border border-warning border-4 rounded btn btn-primary" id="search-btn">Search</button>  
+             
+          </div>
+        <div class="d-flex ms-lg-5 ps-lg-5 d-sm-none" id="chh">
+          <input type="checkbox"><p id="ch" class="mt-3 ms-2">I'm looking for flights</p>
         </div>
-        <div class="d-flex"><input type="checkbox"><p  id="ch" class="mt-3 ms-2">I'm looking for flights</p></div>
-    </div>
       
     
-        <div class="d-flex mt-5 pt-5 ms-2">
-            <div class="row ms-5">
+    <!-- small screen searching  -->
+    <div class="container-fluid px-0 mt-sm-0 w-100" id="form1">
+      <div class="row w-100 m-0">
+        <div class="col-12">
+          <i class="fa-solid fa-bed" id="bed"></i>
+          <input class="border border-warning border-4 rounded w-100" type="text" id="going1" placeholder="Around Current Location">
+        </div>
+      </div>
+    
+      <div class="row w-100 m-0">
+        <div class="col-6">
+          <div id="checkin1" class="border border-warning border-4 rounded">
+            <i class="fa-solid fa-calendar" id="icons"></i>
+            <p id="newp1">Check-in Date</p>
+            <span>Wed 25 Sept 2024</span>
+          </div>
+        </div>
+        <div class="col-6 m-0">
+          <div id="checkin2" class="border border-warning border-4 rounded">
+            <i class="fa-solid fa-calendar" id="icon"></i>
+            <p id="newp2">Check-out Date</p>
+            <span>Wed 25 Sept 2024</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row w-100 m-0">
+        <div class="col-12 border border-warning border-4 rounded d-flex justify-content-between">
+          <div class="col-4">
+            <p>Adults</p>
+            <span>2</span>
+          </div>
+          <div class="col-4">
+            <p>Children</p>
+            <span>0</span>
+          </div>
+          <div class="col-4">
+            <p>Rooms</p>
+            <span>1</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row w-100 m-0">
+        <div class="col-12">
+          <button class="border border-warning border-4 rounded btn btn-primary w-100" id="search-btn1">Search</button>
+        </div>
+      </div>
+    </div>
+    
+    
+ 
+<!-- uhbjkml -->
+         
+        <div class="d-flex mt-5 ms-2" id="banner">
+            <div class="row ms-5" id="item1">
               <div class="col-md-4 ms-3">
               <div class="card mb-3">
                   <div class="row g-0">
@@ -132,431 +192,525 @@
                   </div>
                 </div>
               </div>
+        </div>
 
-</div>
-  
-
-
-   <div class="ms-5 me-5">
-      <div class="ms-5 mb-2">
-        <h2>Offers</h2>
-        <p>Promotions, deals and special offers for you</p>
-      </div>
-
-
-      <!-- cards -->
-      <div class="row ms-4 me-5 mb-4">
-        <div class="col-md-6">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" id="car-tx">Fly away to your dream holiday
-                         </h5>
-                        <p class="card-text" id="p"> Get inspired, compare and book flights with more flexibility </p>
-                        <a href="#" class="btn btn-primary">Search for flights</a>
-            </div>
+     <!-- Normal Width for Larger Screens -->
+        <div class="container d-md-block" id="ban">
+          <div class="mb-2">
+            <h2>Offers</h2>
+            <p>Promotions, deals, and special offers for you</p>
           </div>
-                    <div class="col-md-4 mt-4">
-                      <img src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png?k=6bb1bf3c13db4a7ba3c22a2d1f1051f793c525a78104703b4dec3eb12101f545&o=" alt="..." class="w-50">
-                    </div>
-                      
+        
+          <!-- Cards for large screens -->
+          <div class="row mb-4">
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Fly away to your dream holiday</h5>
+                      <p class="card-text">Get inspired, compare, and book flights with more flexibility.</p>
+                      <a href="#" class="btn btn-primary">Search for flights</a>
                     </div>
                   </div>
+                  <div class="col-md-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png" alt="no-img" class="img-fluid">
+                  </div>
+                </div>
               </div>
-              
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Fly away to your dream holiday</h5>
+                      <p class="card-text">Get inspired, compare, and book flights with more flexibility.</p>
+                      <a href="#" class="btn btn-primary">Search for flights</a>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/xphoto/500x500/184698944.png" alt="..." class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--explore  small screen-->
+        <div class="d-lg-none ms-5 me-5 mt-5">
+          <div>
+            <h3>Explore India</h3>
+            <p>These popular destinations have a lot to offer</p>
+          </div>
+        
+          <!-- Carousel Wrapper -->
+          <div id="exploreIndiaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First Slide -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/region/170x136/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">Goa</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684919.jpg?k=0a73fce29109503c055e288c413d9a1c5bd66fdb26f01c1438e8017b0b64b42f&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">Ooty</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">Mumbai</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Second Slide -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">New Delhi</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">Bangalore</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684720.jpg?k=fdb1d9397eeb9b17d4a1ef6fdf806e6b4366d5ebda38d7f0c212b9c1bec8dcea&o=" alt="" class="rounded mb-2 w-100">
+                    <h6 class="propp">Munnar</h6>
+                    <p class="prop1">5,251 properties</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#exploreIndiaCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-           
+            <button class="carousel-control-next" type="button" data-bs-target="#exploreIndiaCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-          <div class="col-md-6" >
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner"  id="hey">
-                <div class="carousel-item active">
-                  <div class="card mb-3">
-                    <div class="row g-0" id="card-2">
-                      
-                        <div class="card-body rounded"  id="car-2">
-                          
-                          <h5 class="card-title">Fly away to your dream holiday
-                           </h5>
-                          <p class="card-text" id="q"> Get inspired, compare and book flights with more flexibility </p>
-                          <a href="#" class="btn btn-primary">Search for flights</a>
-              </div>
-            </div>
-                
-                        
-                      </div>
-                    </div>
-                </div>
-                
-              </div>
-             
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-            </div>
-
         
-       
-        </div>
+      
+<!-- quick small screen-->
+<div class="d-lg-none ms-5 mt-3 me-5">
+  <div>
+    <h3>Quick and easy trip planner</h3>
+    <p>Pick a vibe and explore the top destinations in India</p>
+  </div>
+  <div id="navigation" class="d-flex mb-3">
+    <div><i class="fa-solid fa-person-biking me-2"></i>Outdoors</div>
+    <div class="ps- ms-5"><i class="fa-solid fa-city me-2"></i>City</div>
+    <div class="ps-5"><i class="fa-solid fa-umbrella-beach me-2"></i>Beach</div>
+    <div class="ps-5"><i class="fa-regular fa-heart me-2"></i>Romance</div>
+  </div>
 
+  <!-- Carousel for mobile view -->
+  <div id="tripPlannerCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-4">
+            <img src="https://r-xx.bstatic.com/xdata/images/region/170x136/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">Goa</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+          <div class="col-4">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684919.jpg?k=0a73fce29109503c055e288c413d9a1c5bd66fdb26f01c1438e8017b0b64b42f&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">Ooty</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+          <div class="col-4">
+            <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">Mumbai</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+        </div>
       </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-4">
+            <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">New Delhi</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+          <div class="col-4">
+            <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">Bangalore</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+          <div class="col-4">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684720.jpg?k=fdb1d9397eeb9b17d4a1ef6fdf806e6b4366d5ebda38d7f0c212b9c1bec8dcea&o=" alt="" class="rounded mb-2 w-100">
+            <h6 class="propp">Munnar</h6>
+            <p class="prop1">5,251 properties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#tripPlannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tripPlannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Grid for larger screens -->
+  <div class="row d-none d-lg-flex">
+    <div class="col-md-2">
+      <img src="https://r-xx.bstatic.com/xdata/images/region/170x136/49646.jpg?k=b7f38878b9164ee38e0b99c4d4646dbea76b7bf4add8464b1aa75e4c9d0efc6e&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">Goa</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+    <div class="col-md-2">
+      <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684919.jpg?k=0a73fce29109503c055e288c413d9a1c5bd66fdb26f01c1438e8017b0b64b42f&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">Ooty</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+    <div class="col-md-2">
+      <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/971346.jpg?k=40eeb583a755f2835f4dcb6900cdeba2a46dc9d50e64f2aa04206f5f6fce5671&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">Mumbai</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+    <div class="col-md-2">
+      <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">New Delhi</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+    <div class="col-md-2">
+      <img src="https://r-xx.bstatic.com/xdata/images/city/170x136/684534.jpg?k=d1fe86c22f2433f4e2dda14ddcbe80feb024b0fb30305e5684a1241fba5d4cff&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">Bangalore</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+    <div class="col-md-2">
+      <img src="https://q-xx.bstatic.com/xdata/images/city/170x136/684720.jpg?k=fdb1d9397eeb9b17d4a1ef6fdf806e6b4366d5ebda38d7f0c212b9c1bec8dcea&o=" alt="" class="rounded mb-2">
+      <h6 class="propp">Munnar</h6>
+      <p class="prop1">5,251 properties</p>
+    </div>
+  </div>
+</div>
 
     <!--carousel  -->
 
-   <div class="ms-5 mt-5 me-5">
-    <div class="ms-5 me-5">
-      <h3 id="prop" class="mb-2">
-        Browse by property type</h3>
-    </div>
-    <div class="row ms-5">
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=" class="card-img-top" alt="...">
-                  </div>
-                  
-                </div>
-                <h6 class="h6">Hotels
-</h6>
-            </div>
-            
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-         
-        </div>
+    <div class="container-fluid mt-5 ms-5 me-5" id="browse">
+      <div>
+        <h3 id="prop" class="mb-4">Browse by property type</h3>
       </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o=" class="card-img-top" alt="...">
-                </div>
-            </div>
-            <h6 class="h6"> 
-              Villas</h6>
-          </div>
-          
-        </div>
-      </div>
-      </div>
-        <div class="col-md-3">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    
+      <div class="row">
+        <!-- Carousel 1 -->
+        <div class="col-md-3 col-12">
+          <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="card mb-3">
-                  <div class="card" style="width: 18rem;">
-                    <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" class="card-img-top" alt="...">
+                  <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=" class="card-img-top img-fluid" alt="Hotels">
+                  <div class="card-body text-center">
+                    <h6 class="h6">Hotels</h6>
                   </div>
-              </div>
-              <h6 class="h6">
-                Apartments
-               </h6>
-            </div>
-           
-           
-          </div>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o=" class="card-img-top" alt="...">
-                </div>
-            </div>
-            <h6 class="h6"> 
-              Resorts
-             </h6>
-          </div>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-         
-        </div>
-
-    </div>
-    </div>
-
-
-</div>
-   </div>
-
-
-   <div class="ms-5 me-5">
-    <div class="ms-5 me-5">
-      <h4>
-        Deals for the weekend
-</h4>
-<p>Save on stays for 20 September - 22 September</p>
-    </div>
-    <div class="row ms-5">
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card" style="width: 18rem;">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/490221803.jpg?k=14a1df5c72eae1f25d06e6f4e363b3b7d72d078269b360c07ce4a0eace2a4729&o=" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text">Citardel Sarover Portico</h5>
-                  <p>Bangalore India <br>
-                  <p>Review score . 243 reviews</p>
                 </div>
               </div>
             </div>
-            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-         
         </div>
-      </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card" style="width: 18rem;">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/129877280.jpg?k=a02824dad99f5ef6aa72bb945ac4db85a44eab9f2048529424384d744202eb21&o=" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-text">Citardel Sarover Portico</h5>
-                  <p>Bangalore India <br>
-                  <p>Review score . 243 reviews</p>
-                
-                </div>
-              </div>
-            
-          </div>
-          
-        </div>
-      </div>
-      </div>
-        <div class="col-md-3">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    
+        <!-- Carousel 2 -->
+        <div class="col-md-3 col-12">
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="card mb-3">
-                  <div class="card" style="width: 18rem;">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/square240/149171546.jpg?k=82fd8901abf3bb6ab81a9b2cc67bb80f4b75c949e98fca51ec7028423195fbe9&o=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-text">Citardel Sarover Portico</h5>
-                  <p>Bangalore India <br>
-                  <p>Review score . 243 reviews</p>
-                
-                    </div>
-                  </div>
-              </div>
-              
-            </div>
-           
-           
-          </div>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://cf.bstatic.com/xdata/images/hotel/square240/538358833.jpg?k=12292a820092ec890a1b961f530da42ad37f4f68782a38ad9d9f903efe46a0cc&o=" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-text">Citardel Sarover Portico</h5>
-                    <p>Bangalore India <br>
-                    <p>Review score . 243 reviews</p>
-                  
+                  <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o=" class="card-img-top img-fluid" alt="Villas">
+                  <div class="card-body text-center">
+                    <h6 class="h6">Villas</h6>
                   </div>
                 </div>
+              </div>
             </div>
-            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-         
         </div>
-
-    </div>
-    </div>
-
-
-    </div>
-   </div>
-
-<!-- carousel unique prop -->
-
-   <div class="ms-5 me-5">   
-    <div class="me-5 mb-5">
-      <h4 class="ms-5 me-5">
-        Stay at our top unique properties
-  
-</h4>
-<p class="ms-5 me-5"> From castles and villas to boats and igloos, we've got it all</p>
+    
+        <!-- Carousel 3 -->
+        <div class="col-md-3 col-12">
+          <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3">
+                  <img src="https://q-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" class="card-img-top img-fluid" alt="Apartments">
+                  <div class="card-body text-center">
+                    <h6 class="h6">Apartments</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    
+        <!-- Carousel 4 -->
+        <div class="col-md-3 col-12">
+          <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3">
+                  <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o=" class="card-img-top img-fluid" alt="Resorts">
+                  <div class="card-body text-center">
+                    <h6 class="h6">Resorts</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     
-
-
-
-    <div class="row ms-5 me-5">
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card" style="width: 18rem;">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/283036728.webp?k=b861d0fdaee2b84a749d57c65c7a112478b33d958bb97ba7b74f06f313b90656&o=" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5>Gyttja  Vastergards</h5>
-                  <p>Finland,Nauvo</p>
-                  <div class="d-flex">
-                    <p class="btn btn-primary me-2">9.3</p>
-                    <p class="mt-2 me-2" >Superb</p>
-                    <p class="pt-2" >131 reviews</p>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-         
-        </div>
+    <!-- deals small screen-->
+    <div class="d-lg-none ms-5 me-5 mb-5" id="deals">
+      <div class="ms-2">
+        <h4>Deals for the weekend</h4>
+        <p>Save on stays for 20 September - 22 September</p>
       </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card" style="width: 18rem;">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/square600/239946673.webp?k=d4af6d47b2b73bc9e179d0433d12302101342eb891ffb7d0ac40b31d4142dcb7&o=" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5>Gyttja  Vastergards</h5>
-                  <p>Finland,Nauvo</p>
-                  <div class="d-flex">
-                    <p class="btn btn-primary me-2">9.3</p>
-                    <p class="mt-2 me-2" >Superb</p>
-                    <p class="pt-2" >131 reviews</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-      </div>
-        <div class="col-md-3">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+    
+      <!-- Main Carousel for All Cards -->
+      <div id="carouselExampleControls" class="carousel slide ms-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Item -->
               <div class="carousel-item active">
-                <div class="card mb-3">
-                  <div class="card" style="width: 18rem;">
-                    <img src="https://cf.bstatic.com/xdata/images/hotel/square600/261566046.webp?k=823cbc5e59ac91784d1c262d35ba4b89082a27d1222994e08e4647c29bd1c6db&o=" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5>Gyttja  Vastergards</h5>
-                  <p>Finland,Nauvo</p>
-                  <div class="d-flex">
-                    <p class="btn btn-primary me-2">9.3</p>
-                    <p class="mt-2 me-2" >Superb</p>
-                    <p class="pt-2" >131 reviews</p>
-                    </div>
-                  </div>
-              </div>
-              </div>
-            </div>
-           
-           
-          </div>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mb-3">
-                <div class="card" style="width: 18rem;">
-                  <img src="https://cf.bstatic.com/xdata/images/hotel/square600/236967822.webp?k=767dbb831d2109499cf73d2880a88e021a73781d7206cb812a328fd344756951&o=" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5>Gyttja  Vastergards</h5>
-                  <p>Finland,Nauvo</p>
-                  <div class="d-flex">
-                    <p class="btn btn-primary me-2">9.3</p>
-                    <p class="mt-2 me-2" >Superb</p>
-                    <p class="pt-2" >131 reviews</p>
+                <div class="card" style="width: 135%; margin: 0 auto;">
+                  <img src="https://cf.bstatic.com/xdata/images/hotel/square240/490221803.jpg?k=14a1df5c72eae1f25d06e6f4e363b3b7d72d078269b360c07ce4a0eace2a4729&o=" class="card-img-top" alt="...">
+                  <div class="card-body ms-5 ps-5 text-center">
+                    <h5 class="card-text ">Citadel Sarovar Portico</h5>
+                    <p>Bangalore, India <br>Review score: 243 reviews</p>
                   </div>
                 </div>
-            </div>
-            
           </div>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
          
-        </div>
-
-    </div>
-    </div>
-
-
-    </div>
-   </div>
-  </div>
-<!-- image -->
-  <div id="border" class="mt-5 mb-2 pt-5 d-flex rounded">
-    <img src="./images/pngtree-circle-clipart-yellow-circle-png-image_2381940-removebg-preview.png" alt="" id="img-8" class="">
-    <div id="parent" > 
-      <img src="https://www.clker.com/cliparts/K/2/n/j/Q/i/blue-dot-hi.png" alt="" width="2300px" id="img-9">
-      <div id="child">
-        <h3 class="text-light fs-2">Find <span>homes</span><br> for your next trip</h3>
-        <button class="btn btn-info border-0 text-info bg-light w-100 mt-3">discover homes</button>
-    </div>
-    <img src="https://cf.bstatic.com/psb/capla/static/media/bh_aw_cpg_main_image.b4347622.png" alt="" id="img-10">
-  
-  </div>
-  </div>
-
-
-  <div class="ms-5 me-5 mt-5">
-      <div id="side">
-        <div  class="d-flex justify-content-between ms-5 me-5">
-          <h3>
-            Stay in a top-rated holiday rental
-    </h3>
-    <div>
-      <p >
-      <a href=""  class="trip" > Find one for your trip</a>
-    </p>
-    </div>
-     </div>
-      </div>
+    
       
+            <!-- Second Item -->
+            <div class="carousel-item">
+              <div class="card" style="width: 135%; margin: 0 auto;">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/square240/129877280.jpg?k=a02824dad99f5ef6aa72bb945ac4db85a44eab9f2048529424384d744202eb21&o=" class="card-img-top" alt="...">
+                <div class="card-body ms-5 ps-5 text-center">
+                  <h5 class="card-text">The Oberoi</h5>
+                  <p>Bangalore, India <br>Review score: 278 reviews</p>
+                </div>
+              </div>
+        </div>
+          <!-- Third Item -->
+          <div class="carousel-item">
+            <div class="card" style="width: 135%; margin: 0 auto;">
+              <img src="https://cf.bstatic.com/xdata/images/hotel/square240/149171546.jpg?k=82fd8901abf3bb6ab81a9b2cc67bb80f4b75c949e98fca51ec7028423195fbe9&o=" class="card-img-top" alt="...">
+              <div class="card-body ms-5 ps-5 text-center">
+                <h5 class="card-text">Taj MG Road</h5>
+                <p>Bangalore, India <br>Review score: 189 reviews</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Fourth Item -->
+          <div class="carousel-item">
+            <div class="card" style="width: 135%; margin: 0 auto;">
+              <img src="https://cf.bstatic.com/xdata/images/hotel/square240/538358833.jpg?k=12292a820092ec890a1b961f530da42ad37f4f68782a38ad9d9f903efe46a0cc&o=" class="card-img-top" alt="...">
+              <div class="card-body ms-5 ps-5 text-center">
+                <h5 class="card-text">Le Meridien</h5>
+                <p>Bangalore, India <br>Review score: 320 reviews</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Add more carousel items here if needed -->
+    
+        </div>
+    
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    
+    
+<!-- deals desktop size-->
+<div class="d-none d-lg-block ms-5 me-5" id="deal">
+  <div class="ms-5 me-5">
+    <h4>Deals for the weekend</h4>
+    <p>Save on stays for 20 September - 22 September</p>
+  </div>
 
-    <div class="row ms-5 me-5">
+  <!-- Grid for Cards -->
+  <div class="row justify-content-center">
+    <!-- First Card -->
+    <div class="col-md-3">
+      <div class="card" style="margin: 0 auto;">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square240/490221803.jpg?k=14a1df5c72eae1f25d06e6f4e363b3b7d72d078269b360c07ce4a0eace2a4729&o=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Citadel Sarovar Portico</h5>
+          <p>Bangalore, India <br>Review score: 243 reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Card -->
+    <div class="col-md-3">
+      <div class="card" style="margin: 0 auto;">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square240/129877280.jpg?k=a02824dad99f5ef6aa72bb945ac4db85a44eab9f2048529424384d744202eb21&o=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">The Oberoi</h5>
+          <p>Bangalore, India <br>Review score: 278 reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Card -->
+    <div class="col-md-3">
+      <div class="card" style="margin: 0 auto;">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square240/149171546.jpg?k=82fd8901abf3bb6ab81a9b2cc67bb80f4b75c949e98fca51ec7028423195fbe9&o=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Taj MG Road</h5>
+          <p>Bangalore, India <br>Review score: 189 reviews</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth Card -->
+    <div class="col-md-3">
+      <div class="card" style="margin: 0 auto;">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square240/538358833.jpg?k=12292a820092ec890a1b961f530da42ad37f4f68782a38ad9d9f903efe46a0cc&o=" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-text">Le Meridien</h5>
+          <p>Bangalore, India <br>Review score: 320 reviews</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- carousel unique prop -->
+<div class="d-lg-none ms-5 me-5 mb-5" id="unique-properties">
+  <div class="ms-2">
+    <h4>Stay at our top unique properties</h4>
+    <p>From castles and villas to boats and igloos, we've got it all</p>
+  </div>
+
+  <!-- Main Carousel for All Cards -->
+  <div id="carouselExampleControls" class="carousel slide ms-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Item -->
+      <div class="carousel-item active">
+        <div class="card" style="width: 135%; margin: 0 auto;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square600/283036728.webp?k=b861d0fdaee2b84a749d57c65c7a112478b33d958bb97ba7b74f06f313b90656&o=" class="card-img-top" alt="Gyttja Vastergards">
+          <div class="card-body ms-5 ps-5 text-center">
+            <h5 class="card-text">Gyttja Vastergards</h5>
+            <p>Finland, Nauvo <br>Review score: 131 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Item -->
+      <div class="carousel-item">
+        <div class="card" style="width: 135%; margin: 0 auto;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square600/239946673.webp?k=d4af6d47b2b73bc9e179d0433d12302101342eb891ffb7d0ac40b31d4142dcb7&o=" class="card-img-top" alt="Gyttja Vastergards">
+          <div class="card-body ms-5 ps-5 text-center">
+            <h5 class="card-text">Gyttja Vastergards</h5>
+            <p>Finland, Nauvo <br>Review score: 131 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Item -->
+      <div class="carousel-item">
+        <div class="card" style="width: 135%; margin: 0 auto;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square600/283036728.webp?k=b861d0fdaee2b84a749d57c65c7a112478b33d958bb97ba7b74f06f313b90656&o=" class="card-img-top" alt="Gyttja Vastergards">
+          <div class="card-body ms-5 ps-5 text-center">
+            <h5 class="card-text">Gyttja Vastergards</h5>
+            <p>Finland, Nauvo <br>Review score: 131 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Item -->
+      <div class="carousel-item">
+        <div class="card" style="width: 135%; margin: 0 auto;">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/square600/283036728.webp?k=b861d0fdaee2b84a749d57c65c7a112478b33d958bb97ba7b74f06f313b90656&o=" class="card-img-top" alt="Gyttja Vastergards">
+          <div class="card-body ms-5 ps-5 text-center">
+            <h5 class="card-text">Gyttja Vastergards</h5>
+            <p>Finland, Nauvo <br>Review score: 131 reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more carousel items here as needed -->
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+ <div class="row ms-5 me-5" id="cardss">
       <div class="col-md-3">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -576,7 +730,7 @@
                 </div>
               </div>
             </div>
-            
+           
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -604,9 +758,9 @@
                   <p>Starting from <span>12,565</span></p>
                 </div>
               </div>
-            
+           
           </div>
-          
+         
         </div>
       </div>
       </div>
@@ -631,7 +785,7 @@
                     </div>
                   </div>
               </div>
-              
+             
             </div>
            
            </div>
@@ -658,7 +812,7 @@
                   </div>
                 </div>
             </div>
-            
+           
           </div>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -667,15 +821,18 @@
          
         </div>
 
+
     </div>
     </div>
+
+
 
 
     </div>
    </div>
-  
+ 
 <!-- insipiration -->
-   <div class="ms-5 me-5">
+   <div class="ms-5 me-5" id="insp">
    <div id="side">
       <div  class="d-flex justify-content-between">
         <h3>
@@ -689,6 +846,7 @@
    </div>
     </div>
 
+
 <!--  new year eve -->
     <div class="row">
       <div class="col-md-6">
@@ -697,14 +855,14 @@
             <div class="carousel-item active">
               <div class="card" style="width: 100%;">
                 <img src="https://media.istockphoto.com/id/1085209072/photo/new-york-city-skyline-at-night-with-fireworks.jpg?s=612x612&w=0&k=20&c=YAGb7praMxNfJB44ZhNkhfeIB1rJg_saE-YYAGj2SKc=" class="card-img-top" alt="no-img" id="img-7">
-                
+               
                 <div id="cc" class="text-light mb-0 mt-5 ms-2">
                   <h4 id="eve">New York's Eve in New York City</h4> <br>
                   <span id="eve-day">Ring in the new year with iconic moments and unforgettable memories in New York City</span>
                 </div>
               </div>
             </div>
-            
+           
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -713,7 +871,7 @@
          
         </div>
       </div>
-      
+     
         <div class="col-md-3">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -725,11 +883,12 @@
                       <h5 class="ryokan">6 best ryokans in Japan to rejuvenate yourself</h5>
                       <p class="card-text" id="ryokan-q">Discover unmissable ryokans to relax and unwind in style</p>
                     </div>
-                  
+                 
                   </div>
 
+
               </div>
-              
+             
             </div>
            
            
@@ -749,7 +908,7 @@
                   </div>
                 </div>
             </div>
-            
+           
           </div>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -758,14 +917,17 @@
          
         </div>
 
+
     </div>
     </div>
+
+
 
 
     </div>
     </div>
 <!-- explore -->
-    <div class="ms-5 me-5 mt-5">
+    <div class="ms-5 me-5 mt-5" id="exp">
       <div>
         <h3>Explore India</h3>
         <p>These popular destinations have a lot to offer</p>
@@ -804,7 +966,7 @@
       </div>
     </div>
     <!--planner  -->
-    <div class="ms-5 me-5">
+    <div class="ms-5 me-5" id="pln">
       <div>
         <h3>Quick and easy trip planner</h3>
         <p>Pick a vibe and explore the top destinations in India</p>
@@ -815,6 +977,7 @@
         <div class="ps-5"><i class="fa-solid fa-umbrella-beach me-2"></i>Beach</div>
         <div class="ps-5"><i class="fa-regular fa-heart me-2"></i>Romance</div>
     </div>
+
 
     <div class="row">
       <div class="col-md-2">
@@ -850,7 +1013,7 @@
     </div>
       </div>
 <!-- travel more -->
-      <div class="row ms-5 me-5">
+      <div class="row ms-5" >
         <div>
           <h4>Travel more, spend less</h4>
         </div>
@@ -863,7 +1026,7 @@
                     <div class="col-md-8">
                       <div class="card-body">
                         <h5 class="card-title">Sign in, save money
-                          
+                         
                          </h5>
                         <p class="card-text"> Save 10% or more at participating properties - just look for the blue Genius label </p>
                         <a href="#" class="btn btn-primary">Sign in</a>
@@ -873,11 +1036,11 @@
                     <div class="col-md-4 mt-4">
                       <img src="https://t-cf.bstatic.com/design-assets/assets/v3.125.0/illustrations-traveller/GeniusGenericGiftBox.png" alt="no-img" class="w-40" style="height: 100px;" id="gift">
                     </div>
-                      
+                     
                     </div>
                   </div>
               </div>
-              
+             
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -888,36 +1051,28 @@
         </div>
       </div>
       <!-- destinations -->
-<div  class="ms-5 me-5">
+<div  class="ms-5 me-5 ms-sm-0 me-sm-0" id="dest">
   <h4>Destinations we love</h4>
   <div id="navigation" class="d-flex mb-3 fw-5">
     <div>Regions</div>
     <div class="ps-5">Cities</div>
     <div class="ps-5 mb-3">Places of Interest</div>
 </div>
-<div>
-
+<div id="dest-row">
   <div class="row">
-
-    <div class="col-md-2" id="ap">
-       
- 
-<a href="">Texel</a>
-<p>411 properties</p>
-<a href="">Zanzibar</a>
-<p>882 properties</p>
-<a href="">Hawaii</a>
-<p>5,452 properties</p>
-<a href="">Bora Bora</a>
-<p>59 properties</p>
-
-
-
- 
-
+    <div class="col-2 " id="ap"> 
+        <a href="">Texel</a>
+        <p>411 properties</p>
+        <a href="">Zanzibar</a>
+        <p>882 properties</p>
+        <a href="">Hawaii</a>
+        <p>5,452 properties</p>
+        <a href="">Bora Bora</a>
+        <p>59 properties</p>
 
     </div>
-    <div class="col-md-3" id="bp">
+    <div class="col-3" id="bp">
+
 
       <a href="">Phuket Province</a>
       <p>5,547 properties</p>
@@ -927,8 +1082,8 @@
       <p>90 properties</p>
       <a href="">England</a>
       <p>80,602 properties</p></div>
-    <div class="col-md-3" id="cp">
-      
+    <div class="col-3" id="cp">
+     
 <a href="">Ras Al Khaimah</a>
 <p>117 properties</p>
 <a href="">Guernsey</a>
@@ -938,7 +1093,7 @@
 <a href="">Santorini</a>
 <p>1,794 properties</p>
     </div>
-    <div class="col-md-2" id="dp">
+    <div class="col-2" id="dp">
       <a href="">Mykonos</a>
 <p>1,455 properties</p>
 <a href="">Lake District</a>
@@ -950,17 +1105,21 @@
 
 
 
+
+
+
     </div>
-    <div class="col-md-2" id="ep"><a href="">Ibiza</a>
+    <div class="col-2" id="ep"><a href="">Ibiza</a>
       <p>1,642 properties</p>
       <a href="">Isle of Wight</a>
       <p>961 properties</p>
       <a href="">Bihar</a>
       <p>781 properties</p></div>
-    
+   
   </div>
 </div>
 </div>
+
 
 <!-- fp -->
 <div id="fp">
@@ -987,11 +1146,6 @@
   <a href="">. Reviews</a>
   <a href="">. Discover monthly stays</a>
   </div>
-</div>
-
-
-
-
 
 
 
@@ -1047,7 +1201,7 @@
          </div>
          <div>
           <ul id="ul4">
-              <h5 id="About"><a href=""> Partners</a>
+              <h5 id="Partner"><a href=""> Partners</a>
                   </h5>
               <li><a href="">Extranet login</a>
                   </li>
@@ -1059,7 +1213,7 @@
       </div>
       <div>
 
-        <ul id="ul5">
+        <ul id="ul5" class="me-lg-5">
             <h5 id="About"><a href="">About</a>
                 </h5>
             <li><a href="">About Booking.com</a>
@@ -1079,24 +1233,16 @@
     <hr>
     </div>
     </footer>
-   <div id="close"  class="container-fluid">
-        <div>
-           <a href=""> Web Accessiblity
-             </a>
-             <a href=""> Privacy Statement
-                </a>
-                <a href=""> Terms of Use
-                 </a>
-                 <a href="">Contact Us
-                 </a>
-        </div>
+   <div id="close"  class="container-fluid ps-lg-5">
         <div id="copyr">
           Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services. <br>
 Copyright © 1996–2024 Booking.com™. All rights reserved.
            </div>
    </div>
-   <div id="space" class="image"></div>
-  </div>
+   <div id="space" class="image">
+
+   </div>
+
  
 
 
@@ -1104,4 +1250,4 @@ Copyright © 1996–2024 Booking.com™. All rights reserved.
 
 
 </body>
-</html>
+</html> 
